@@ -309,7 +309,7 @@ void A(int i){
     cout<<que[i]<<"请想好后输入选项（无法撤回）:";
     string s;
     cin>>s;
-    while(s!="A"&&s!="B"'){
+    while(s!="A"&&s!="B"){
         printf("请重新输入:");
         cin>>s;
     }
