@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cstdlib>
+#include<string>
 using namespace std;
 typedef long long ll;
 const int J=1, P=2, S=3, N=4, E=5, I=6, F=7, T=8;
@@ -306,13 +307,13 @@ void score(int i, char ans){
 }
 void A(int i){
     cout<<que[i]<<"请想好后输入选项（无法撤回）:";
-    char c;
-    cin>>c;
-    while(c!='A'&&c!='B'){
+    string s;
+    cin>>s;
+    while(s!="A"&&s!="B"'){
         printf("请重新输入:");
-        cin>>c;
+        cin>>s;
     }
-    score(i, c);
+    score(i, s[0]);
     cout<<endl;
 }
 int main(){
